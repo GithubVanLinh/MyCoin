@@ -1,0 +1,39 @@
+<div class="section bg-blue">
+  <div style="width: 100%;">
+    <div style="display: flex; justify-content: end;">
+      <a class="register-button">
+        Access My Wallet</a>
+    </div>
+    <div>
+      {{#if message}}
+        <div class="message-box">
+          <span>
+
+            {{message}}
+          </span>
+        </div>
+      {{/if}}
+
+      <div>
+        Create New Wallet
+      </div>
+
+      <div>
+        <form action="/create-new-wallet" method="post">
+          <input
+            type="password"
+            name="password"
+            placeholder="Password"
+            required
+          />
+          <button class="generate-button" type="submit">Generate New Access Key</button>
+        </form>
+      </div>
+
+      {{#if keystore}}
+        <div><input type="text" value="{{keystore}}" disabled /></div>
+      {{/if}}
+    </div>
+  </div>
+
+</div>

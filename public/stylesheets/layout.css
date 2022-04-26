@@ -1,0 +1,154 @@
+@font-face {
+  font-family: Oswald;
+  src: url('../fonts/Akshar/Akshar-VariableFont_wght.ttf');
+}
+
+.bg-blue {
+  background-color: #0099ff;
+}
+
+body {
+  padding: 0;
+}
+
+.h-eql-scr {
+  height: 100vh;
+}
+
+.max-height {
+  height: 100%;
+}
+
+.main-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: white;
+  font-family: "Oswald";
+}
+
+.content-layout-height {
+  height: 80%;
+  background-color: blue;
+}
+
+.header-layout-height {
+  height: 20%;
+  background-color: darkblue;
+}
+
+a.head-address {
+  text-decoration: none;
+  color: black;
+  margin: 0 0.5rem;
+}
+
+a.head-address:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.register-button {
+  text-decoration: none;
+  border: none;
+  background-color: green;
+  color: white;
+  padding: 10px;
+}
+
+.register-button:hover {
+  text-decoration: none;
+  background-color: rgb(255, 255, 255);
+  color: black;
+}
+
+.content-layout-height > div > span {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  font-family: "Oswald";
+}
+
+.footer {
+  background-color: blue;
+  color: white;
+  padding: 10px;
+}
+
+.section {
+  padding: 0px 100px;
+  height: 33vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.generate-button {
+  border: none;
+  background-color: rgb(62, 100, 62);
+  color: white;
+  padding: 10px;
+}
+
+.generate-button:active {
+  border: none;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  padding: 10px;
+}
+
+.generate-button:hover {
+  border: none;
+  background-color: green;
+  color: rgb(255, 255, 255);
+  padding: 10px;
+}
+
+.message-box {
+  border: none;
+  background-color: rgb(154, 243, 255);
+  color: rgb(39, 39, 39);
+  padding: 10px;
+}
+
+.message-box > span {
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: "Oswald";
+}
+
+.navigation-bar {
+  background-color: rgb(0, 159, 170);
+  color: white;
+  padding: 12px;
+}
+
+.main-content {
+  background-color: rgb(175, 175, 175);
+  color: rgb(0, 0, 0);
+  padding: 12px;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  margin: 10px;
+  background-color: white;
+}
+
+.section {
+  margin: 10px 0px;
+  padding: 0px;
+  height: 33vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
