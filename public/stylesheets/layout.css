@@ -143,6 +143,18 @@ a.head-address:hover {
   background-color: white;
 }
 
+.card-header {
+  height: 100px;
+  max-height: 40%;
+}
+
+.card-content {
+  height: 100%;
+  max-height: 60%;
+}
+
+
+
 .section {
   margin: 10px 0px;
   padding: 0px;
@@ -151,4 +163,15 @@ a.head-address:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.main-side {
+  height: 100%;
+  position: fixed;
+  background: lightblue;
+}
+
+.data-side {
+  height: 100%;
+  background-color: lightgrey;
 }

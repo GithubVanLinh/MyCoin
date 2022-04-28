@@ -13,7 +13,7 @@ router.get("/", function (req, res, next) {
   if (req.session.privateKey) {
     res.render("homepage", {
       title: "Homepage",
-      publicKey: req.session.privateKey,
+      publicKey: req.session.publicKey,
     });
   } else {
     res.render("index", { title: "Express", chain: p2p.blockchain.toJson() });
@@ -49,6 +49,7 @@ router.post("/access-wallet", async function (req, res, next) {
     const wallet = await Wallet.fromV3(keyString, password);
 
     req.session.privateKey = wallet.getPrivateKey().toString("hex");
+    req.session.publicKey = wallet.getPublicKey().toString("hex");
     req.session.save();
 
     console.log("routes/index.js", "session after", req.session);

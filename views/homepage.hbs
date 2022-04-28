@@ -1,8 +1,8 @@
 <div>
   <div class="row" style="margin: 0;">
-    <div class="col-3 navigation-bar">
+    <div class="main-side col-3 offset-md-0">
       <div class="row">
-        <div>
+        <div class="main-title">
           My Coin
         </div>
       </div>
@@ -11,7 +11,10 @@
           class="card-container"
           style="width: 80%; height: 33vh; color: black;"
         >
-          Card
+          <div class="col">
+            <div class="row card-header text-break">{{publicKey}}</div>
+            <div class="row card-content">coin</div>
+          </div>
         </div>
       </div>
       <div class="row">
@@ -25,7 +28,7 @@
       <div class="row">Contact</div>
       <div class="row">Logout</div>
     </div>
-    <div class="col-9 main-content">
+    <div class="col-9 main-content data-side offset-md-3">
       <div class="section">
         <div class="card-container">
           main
